@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/css/styles.css') }}">
+       
+        <title>HUMAN ACTIVITY RECOGNITION</title>
+        <style>
+            /* Add this custom CSS */
+            .services-row {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-items: center;
+                gap: 20px;
+                margin-top: 30px;
+            }
+            
+            .service-card {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 300px;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            
+            .service-card img {
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+                margin-bottom: 15px;
+            }
+            
+            .service-card button {
+                padding: 10px 20px;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+                transition: background-color 0.3s;
+            }
+            
+            .service-card button:hover {
+                background-color: #45a049;
+            }
+        </style>
+    </head>
+    <body>
+
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-chevron-up scrolltop__icon'></i>
+        </a>
+
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo"><h3>Human Activity Recognition</h3></a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                        <li class="nav__item"><a href="/" class="nav__link">Logout</a></li>
+                        <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+        <!--========== HEADER ENDS ==========-->
+
+        <main class="l-main">
+
+            <!--========== ABOUT ==========-->
+            <section class="about section bd-container" id="about">
+                <div class="about__container  bd-grid">
+                    <div class="about__data">
+                        <span class="section-subtitle about__initial">About us</span>
+                        <h2 class="section-title about__initial">Human Activity Recognition</h2>
+                        <p class="about__description">Ever wondered if a machine could understand what you're doing just by watching? This intelligent system does exactly that. Powered by deep learning and built with Flask, it analyzes video input to recognize human activities like walking, jumping, sitting, or waving—just like a digital observer with a sharp eye. Whether you're building smart surveillance, fitness apps, or interactive environments, this system turns raw video into real-time insights with ease and accuracy.</p>
+                    </div>
+
+                    <img src="https://user-images.githubusercontent.com/11255376/71256361-d7fb4000-2373-11ea-8a17-26ce9f9dc8f5.gif" alt="" class="about__img">
+                </div>
+            </section>
+
+            <!--========== SERVICES ==========-->
+            <section class="services section bd-container" id="services">
+                <span class="section-subtitle">Offering</span>
+                <h2 class="section-title">Our services</h2>
+                
+                <div class="services-row">
+                    <div class="service-card">
+                        <img src="https://image.freepik.com/free-photo/man-smiling-with-arms-crossed_1187-2903.jpg">
+                        <form action="/start" method="post" enctype="multipart/form-data">
+                            <input type="text" placeholder="Enter the Activity Name" name="in1" required/><br>
+                            <button type="submit">Start Activity</button>
+                        </form>
+                    </div>
+                    
+                    <div class="service-card">
+                        <img src="https://tse1.mm.bing.net/th?id=OIP.9cl2wAKccAwm4SxhHWL5OAHaEK&pid=Api&P=0&h=180">
+                        <form action="/train" method="post" enctype="multipart/form-data">
+                            <button type="submit">Train the Data</button>
+                        </form>
+                    </div>
+                    
+                    <div class="service-card">
+                        <img src="https://user-images.githubusercontent.com/11255376/71256358-d6317c80-2373-11ea-8fd9-2ae1777c8a0f.gif">
+                        <form action="/recognition" method="post" enctype="multipart/form-data">
+                            <button type="submit">Recognition</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <!--========== CONTACT US ==========-->
+            <section class="contact section bd-container" id="contact">
+                        <h2 class="section-title contact__initial">Contact us</h2>
+                        <div style="display: flex;justify-content: space-around;">
+                            <div style="width: 50%;">
+                                <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
+                                <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                                <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                                <p><a href="#" class="footer__social"><i class='bx bx-envelope'></i></a>&nbsp;&nbsp;&nbsp;abc@gmail.com</p>
+                                <p><a href="#" class="footer__social"><i class='bx bx-phone'></i></a>&nbsp;&nbsp;&nbsp;+911234567890</p>
+                            </div>
+                        </div>
+            </section>
+        </main>
+        <!--========== SCROLL REVEAL ==========-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="static/styles/js/main.js"></script>
+    </body>
+</html>

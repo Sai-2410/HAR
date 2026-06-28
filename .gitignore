@@ -1,0 +1,86 @@
+# =========================
+# Python
+# =========================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+env/
+.venv/
+ENV/
+
+
+# =========================
+# IDE / Editor
+# =========================
+
+.vscode/
+.idea/
+
+
+# =========================
+# Machine Learning Data
+# =========================
+
+# Ignore training datasets
+*.csv
+*.npy
+
+# Keep label mapping required for inference
+!labels.npy
+
+
+# =========================
+# Model Files
+# =========================
+
+# Keep trained model for deployment
+# (model.h5 will be uploaded)
+
+
+# =========================
+# Flask
+# =========================
+
+# Local database
+*.db
+
+# Uploaded user files
+uploads/
+static/uploads/
+
+
+# =========================
+# TensorFlow / Logs
+# =========================
+
+logs/
+tensorboard/
+*.log
+
+
+# =========================
+# Environment Variables
+# =========================
+
+.env
+.env.*
+
+
+# =========================
+# OS Generated Files
+# =========================
+
+.DS_Store
+Thumbs.db
+
+
+# =========================
+# Temporary Files
+# =========================
+
+*.tmp
+*.temp
