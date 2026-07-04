@@ -27,6 +27,7 @@ The project demonstrates an end-to-end AI workflow including human pose detectio
 
 # 🏗 Workflow & Activity Recognition Pipeline
 
+```
 🎥 Laptop Camera / Video Input
               ↓
 🦴 MediaPipe Pose Detection
@@ -42,7 +43,7 @@ The project demonstrates an end-to-end AI workflow including human pose detectio
 🌐 Flask Web Application
               ↓
 ✅ Activity Displayed To User
-
+```
 
 ---
 
