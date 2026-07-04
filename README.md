@@ -1,355 +1,307 @@
-# 🏃 ActiVision AI
-### Real-Time Human Activity Recognition Using Deep Learning
+# 🏃 ActiVision AI – Real-Time Human Activity Recognition Using Deep Learning
 
-ActiVision AI is a Flask-based Human Activity Recognition (HAR) system that uses **Computer Vision**, **MediaPipe Pose Estimation**, and **Deep Learning** to recognize human activities in real time through a laptop camera.
+A Flask-based Human Activity Recognition system that uses computer vision and deep learning to identify human activities in real time through a laptop camera.
 
-The system detects human body landmarks from live video, extracts pose features, and feeds them into a trained deep learning model to classify different human activities instantly. The predictions are displayed through an interactive web interface built using Flask.
+ActiVision AI uses MediaPipe for extracting human body landmarks from live video input and a trained deep learning model to classify different human activities. The system captures movement patterns, processes the extracted features, and displays the predicted activity through an interactive web-based interface.
 
-This project demonstrates an end-to-end AI workflow, including:
-
-- Human Pose Detection
-- Feature Extraction
-- Deep Learning Model Training
-- Real-Time Activity Recognition
-- Flask Deployment
+The project demonstrates an end-to-end AI workflow including human pose detection, feature extraction, deep learning model integration, and real-time activity prediction.
 
 ---
 
-# 📖 Table of Contents
+# 🚀 Tech Stack
 
-- Features
-- Technology Stack
-- System Architecture
-- Project Workflow
-- Deep Learning Pipeline
-- Model Architecture
-- Repository Structure
-- Installation
-- Running the Application
-- Project Screenshots
-- Skills Demonstrated
-- Future Improvements
-- Project Note
-
----
-
-# ✨ Features
-
-- 🎥 Real-time activity recognition using webcam
-- 🦴 Human pose detection using MediaPipe
-- 📍 Body landmark extraction
-- 🧠 Deep learning-based activity classification
-- ⚡ Instant predictions from live camera feed
-- 🌐 Flask web application
-- 📊 Complete AI inference pipeline
-- 📂 Modular code structure
-- 💾 Trained model integration
-- 🖥 User-friendly interface
+[![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![Flask](https://img.shields.io/badge/Flask-000000?logo=flask&logoColor=white)](https://flask.palletsprojects.com/)
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?logo=tensorflow&logoColor=white)](https://www.tensorflow.org/)
+[![Keras](https://img.shields.io/badge/Keras-D00000?logo=keras&logoColor=white)](https://keras.io/)
+[![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?logo=opencv&logoColor=white)](https://opencv.org/)
+[![MediaPipe](https://img.shields.io/badge/MediaPipe-4285F4?logo=google&logoColor=white)](https://developers.google.com/mediapipe)
+[![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?logo=scikitlearn&logoColor=white)](https://scikit-learn.org/)
+[![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white)](https://numpy.org/)
+[![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white)](https://pandas.pydata.org/)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 ---
 
-# 🚀 Technology Stack
+# 🏗 Workflow & Activity Recognition Pipeline
 
-| Category | Technologies |
-|----------|--------------|
-| Programming Language | Python |
-| Backend | Flask |
-| Deep Learning | TensorFlow, Keras |
-| Computer Vision | OpenCV |
-| Pose Detection | MediaPipe |
-| Machine Learning | Scikit-Learn |
-| Data Processing | NumPy, Pandas |
-| Frontend | HTML, CSS, JavaScript |
+🎥 Laptop Camera / Video Input
+              ↓
+🦴 MediaPipe Pose Detection
+              ↓
+📍 Human Body Landmark Extraction
+              ↓
+🧹 Feature Processing & Data Preparation
+              ↓
+🧠 Deep Learning Classification Model
+              ↓
+📊 Human Activity Prediction
+              ↓
+🌐 Flask Web Application
+              ↓
+✅ Activity Displayed To User
 
----
-
-# 🏗 System Architecture
-
-```text
-               Live Camera
-                    │
-                    ▼
-      MediaPipe Pose Detection
-                    │
-                    ▼
-      Human Landmark Extraction
-                    │
-                    ▼
-      Feature Preprocessing
-                    │
-                    ▼
-      Trained Deep Learning Model
-                    │
-                    ▼
-      Human Activity Prediction
-                    │
-                    ▼
-      Flask Web Application
-                    │
-                    ▼
-      Activity Display to User
-```
 
 ---
 
-# 🔄 Project Workflow
+# ✨ Core Features
 
-## 1️⃣ Data Collection
+- Real-time human activity recognition using laptop camera input  
+- Human pose detection using MediaPipe framework  
+- Body landmark extraction for movement analysis  
+- Deep learning based activity classification  
+- Flask-based interactive web application  
+- Real-time prediction from live video feed  
+- Modular pipeline for data collection, training, and inference  
+- Trained model integration for instant activity recognition  
+- User-friendly interface for interacting with the AI system  
 
-- Capture live video using webcam
-- Detect human body pose
-- Extract body landmark coordinates
-- Store activity samples
-
----
-
-## 2️⃣ Feature Engineering
-
-- Clean collected data
-- Normalize landmark coordinates
-- Prepare training dataset
-- Convert movements into numerical features
+ActiVision AI provides a complete computer vision pipeline where human movements are captured, analyzed, and classified into different activity categories using deep learning techniques.
 
 ---
 
-## 3️⃣ Model Training
+# 🧪 Deep Learning Models & Implementation
 
-- Train deep learning model
-- Evaluate model performance
-- Save trained model
+ActiVision AI uses deep learning techniques to recognize human activities by learning patterns from extracted body movement features.
 
-Outputs:
+The project follows a complete machine learning workflow:
 
-```
-model.h5
-labels.npy
-```
-
----
-
-## 4️⃣ Inference
-
-- Load trained model
-- Capture live camera frames
-- Extract pose landmarks
-- Predict activity
-- Display prediction in browser
+| Stage | Description |
+|--------|-------------|
+| Data Collection | Captures human pose landmarks using MediaPipe and camera input |
+| Feature Extraction | Converts body movements into numerical landmark features |
+| Data Processing | Prepares and formats activity data for model training |
+| Model Training | Trains deep learning classification models |
+| Model Integration | Loads trained model for real-time prediction |
+| Inference | Classifies live human activities from camera input |
 
 ---
 
-# 🧠 Deep Learning Pipeline
+# 🧠 Model Architecture
 
-```text
-Camera Frame
-      │
-      ▼
-MediaPipe Pose Detection
-      │
-      ▼
-Pose Landmarks
-      │
-      ▼
-Feature Extraction
-      │
-      ▼
-Deep Learning Model
-      │
-      ▼
-Activity Classification
-      │
-      ▼
-Real-Time Prediction
-```
-
----
-
-# 🧠 Deep Learning Models
-
-The project experiments with different sequence-learning architectures.
+The system experiments with deep learning architectures for activity recognition:
 
 | Model | Purpose |
-|--------|----------|
-| CNN | Learns spatial features |
-| RNN | Sequential learning |
-| LSTM | Learns temporal dependencies |
-| GRU | Lightweight sequence learning |
-| CNN-LSTM | Spatial + Temporal feature learning |
+|--------|---------|
+| CNN | Extracts spatial patterns from movement features |
+| LSTM | Learns temporal relationships in activity sequences |
+| GRU | Provides efficient sequence learning with lower complexity |
+| RNN | Basic sequential learning approach |
+| CNN-LSTM | Combines spatial and temporal feature learning |
+
+---
+
+# ✅ Final Prediction Pipeline
+
+
+Live Camera Frame
+        ↓
+MediaPipe Pose Landmark Detection
+        ↓
+Feature Extraction
+        ↓
+Trained Deep Learning Model
+        ↓
+Activity Classification
+        ↓
+Real-Time Result Display
+
+---
+
+# ⚙️ Development Workflow
+
+## 📌 Data Collection Module
+
+- Captures real-time video input through laptop camera
+- Uses MediaPipe to detect human body landmarks
+- Extracts body joint coordinates from detected poses
+- Converts human movement into structured numerical data
+- Stores collected activity samples for training
+
+---
+
+## 📌 Data Processing & Feature Extraction
+
+- Processes collected pose landmark data
+- Cleans and prepares activity samples
+- Converts movement patterns into model-ready features
+- Organizes data based on activity classes
+
+---
+
+## 📌 Model Training Module
+
+- Uses processed activity data for deep learning training
+- Builds and trains activity classification models
+- Evaluates model performance
+- Saves trained model as `model.h5`
+- Stores activity labels using `labels.npy`
+
+---
+
+## 📌 Inference Module
+
+- Loads the trained deep learning model
+- Receives live camera input
+- Extracts real-time pose features using MediaPipe
+- Performs activity classification
+- Displays predicted activity instantly
+
+---
+
+## 📌 Web Application Integration
+
+- Flask connects the trained AI model with the frontend
+- Handles user requests and prediction flow
+- Provides browser-based interaction
+- Displays real-time activity recognition results
 
 ---
 
 # 📂 Repository Structure
 
-```text
 HUMAN_ACTIVITY_FINAL/
+
 │
 ├── app.py
-├── inference.py
+│   └── Main Flask application
+│       Handles routes, user interaction, and activity prediction
+│
 ├── data_collection.py
+│   └── Collects human pose data using MediaPipe
+│       Extracts body landmark coordinates from camera input
+│
 ├── data_training.py
+│   └── Processes collected data
+│       Trains the deep learning activity classification model
+│
+├── inference.py
+│   └── Loads trained model
+│       Performs real-time activity prediction
 │
 ├── model.h5
+│   └── Saved trained deep learning model
+│
 ├── labels.npy
+│   └── Stores activity class labels
+│
 ├── requirements.txt
+│   └── Contains all required Python dependencies
 │
 ├── templates/
+│
 │   ├── home.html
+│   │   └── Main application interface
+│   │
 │   └── login.html
+│       └── User authentication page
 │
 ├── static/
+│
 │   ├── bg.jpg
+│   │   └── Background assets
+│   │
 │   └── styles/
+│       └── CSS files and frontend styling
 │
 ├── Snapshots/
+│   └── Project screenshots
 │
 └── README.md
-```
 
 ---
 
-# ⚙ Installation
+# ▶️ Running The Application
 
-## Clone Repository
+## 1. Clone Repository
 
-```bash
 git clone https://github.com/IgrisViOverlord-10/laughing-dollop.git
-```
 
-Move into the project directory.
+Move into the project folder:
 
-```bash
 cd HUMAN_ACTIVITY_FINAL
-```
 
----
+2. Create Virtual Environment
 
-## Create Virtual Environment
+Create a Python virtual environment:
 
-```bash
 python -m venv venv
-```
 
----
-
-## Activate Virtual Environment
-
-### Windows
-
-```bash
+3. Activate Virtual Environment
+Windows:
 venv\Scripts\activate
-```
 
-### Linux / macOS
+After successful activation:
 
-```bash
-source venv/bin/activate
-```
+(venv) C:\Users\User\HUMAN_ACTIVITY_FINAL>
 
----
+4. Install Dependencies
 
-## Install Dependencies
+Install all required libraries:
 
-```bash
 pip install -r requirements.txt
-```
+5. Run Flask Application
 
----
+Start the application:
 
-# ▶ Running the Application
-
-Start the Flask server.
-
-```bash
 python app.py
-```
+6. Open Website
 
-Open your browser and visit
+After starting the Flask server, open:
 
-```
 http://127.0.0.1:5000/
-```
 
-The application will start detecting and recognizing human activities using your webcam.
+The ActiVision AI web application will open in the browser and allow real-time human activity recognition using the laptop camera.
 
 ---
 
-# 📸 Project Screenshots
+# 📸 Project Snapshots
 
 | Screenshot | Description |
 |------------|-------------|
-| ![](Snapshots/Snap-1.png) | Login Page |
-| ![](Snapshots/Snap-2.png) | Home Dashboard |
-| ![](Snapshots/Snap-3.png) | Real-Time Activity Prediction |
+| ![Login Page](Snapshots/Snap-1.png) | User login interface |
+| ![Home Page](Snapshots/Snap-2.png) | ActiVision AI main dashboard |
+| ![Activity Prediction](Snapshots/Snap-3.png) | Real-time human activity recognition output |
+
 
 ---
 
-# 🧪 Machine Learning Workflow
+# 🧠 Skills Demonstrated
 
-```text
-Collect Dataset
-      │
-      ▼
-Extract Pose Landmarks
-      │
-      ▼
-Preprocess Features
-      │
-      ▼
-Train Deep Learning Model
-      │
-      ▼
-Save Model
-      │
-      ▼
-Deploy with Flask
-      │
-      ▼
-Real-Time Prediction
-```
+- Deep Learning model implementation  
+- Computer Vision application development  
+- Human Pose Estimation using MediaPipe  
+- Real-time video processing using OpenCV  
+- Data collection and feature extraction  
+- Neural network training and model integration  
+- Machine Learning workflow development  
+- Flask-based web application development  
+- Backend and frontend integration  
+- Real-time AI inference systems  
+- Model deployment and optimization  
 
----
-
-# 💡 Skills Demonstrated
-
-- Deep Learning
-- Computer Vision
-- Human Pose Estimation
-- OpenCV
-- MediaPipe
-- TensorFlow
-- Keras
-- Flask Development
-- Feature Engineering
-- Machine Learning Pipeline
-- Model Deployment
-- Real-Time AI Systems
 
 ---
 
 # 🔮 Future Improvements
 
-- Support more activity classes
-- Increase dataset diversity
-- Improve prediction accuracy
-- Integrate Transformer-based models
-- Handle occlusion and low-light environments
-- Cloud deployment
-- Mobile application
-- Edge-device optimization
-- Activity history dashboard
-- Explainable AI integration
+- Support recognition of a larger number of human activities  
+- Improve model accuracy using larger and more diverse datasets  
+- Implement advanced deep learning architectures such as Transformers  
+- Improve detection under low lighting and complex backgrounds  
+- Handle partial body visibility and occlusion scenarios  
+- Deploy the application on cloud platforms  
+- Develop a mobile application version  
+- Optimize the model for edge devices and real-time deployment  
+- Add activity history tracking and analytics dashboard  
+- Integrate explainable AI techniques for better prediction understanding  
 
 ---
 
-# 📚 Project Note
+# 🏁 Project Note
 
-This project was developed as a final-year academic project to demonstrate the practical implementation of **Deep Learning**, **Computer Vision**, **MediaPipe Pose Estimation**, and **Real-Time Human Activity Recognition**.
+> This project was developed as a final year academic project to demonstrate the practical implementation of deep learning, computer vision, human pose estimation, and real-time activity recognition using a Flask-based web application.
 
-ActiVision AI showcases the complete AI development lifecycle—from collecting pose data and training deep learning models to deploying an interactive Flask application capable of recognizing human activities in real time.
-
----
-
-# ⭐ If you found this project useful, consider giving it a star!
-
-```
-⭐ Star this repository if you like the project!
-```
+ActiVision AI showcases the complete AI development lifecycle — from collecting human movement data and training deep learning models to deploying a real-time recognition system that works through a laptop camera.
