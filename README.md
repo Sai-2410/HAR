@@ -306,7 +306,13 @@ The browser will open the ActiVision AI application and begin real-time activity
 
 ---
 
+# 📸 Project Snapshots
 
+| Screenshot | Description |
+|------------|-------------|
+| ![](Snapshots/Snap-1.png) | Login Page |
+| ![](Snapshots/Snap-2.png) | Home Dashboard |
+| ![](Snapshots/Snap-3.jpg) | Real-Time Activity Prediction |
 
 ---
 
