@@ -1,4 +1,4 @@
-# 🏃 Real Time Human Activity Recognition Using Deep Learning
+# 🏃 ActiVision AI - Real Time Human Activity Recognition Using Deep Learning
 
 A Flask-based **Human Activity Recognition (HAR)** system that uses **computer vision** and **deep learning** to identify human activities in real time through a laptop camera.
 
@@ -88,7 +88,7 @@ Multiple deep learning architectures were trained and evaluated on both the **UC
 | Two Layer CNN | 95.69% | 91.92% | 97.27% | 89.22% |
 | Hybrid CNN-LSTM | 95.51% | 91.41% | 80.89% | 76.47% |
 
-The following benchmark results summarize the deep learning models evaluated during the research phase of this project.
+The following benchmark results summarize the performance of different deep learning architectures evaluated during the research and development of ActiVision AI.
 
 ### ✅ Final Model Selection
 
@@ -101,10 +101,10 @@ The following benchmark results summarize the deep learning models evaluated dur
 # ⚙️ Prediction Pipeline
 
 ```text
-🎥 Live Camera Frame
+🎥 Live Camera Feed
         │
         ▼
-🦴 MediaPipe Pose Detection
+🦴 MediaPipe Pose Estimation
         │
         ▼
 📍 Body Landmark Extraction
@@ -113,13 +113,13 @@ The following benchmark results summarize the deep learning models evaluated dur
 🧹 Feature Vector Generation
         │
         ▼
-🧠 Trained Deep Learning Model
+🧠 Trained CNN Model
         │
         ▼
-🏃 Human Activity Classification
+🏃 Activity Classification
         │
         ▼
-📺 Real-Time Prediction Display
+📺 Real-Time Prediction
 ```
 
 ---
@@ -211,19 +211,17 @@ HUMAN_ACTIVITY_FINAL/
 │       real-time human activity recognition.
 │
 ├── model.h5
-│   └── Serialized deep learning model used for inference.
+│   └── Pre-trained deep learning model used for activity recognition.
 │
 ├── labels.npy
-│   └── Stores activity class labels corresponding
-│       to model predictions.
+│   └── Stores activity labels used during inference.
 │
 ├── requirements.txt
 │   └── Python dependencies required to run the project.
 │
 ├── templates/
-│   ├── home.html
-│   └── login.html
-│       └── HTML templates for the Flask web interface.
+│   ├── home.html      # Main application interface
+│   └── login.html     # User authentication page
 │
 ├── static/
 │   ├── bg.jpg
@@ -245,7 +243,7 @@ HUMAN_ACTIVITY_FINAL/
 ## 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/IgrisViOverlord-10/laughing-dollop.git
+git clone https://github.com/Sai-2410/HAR.git
 ```
 
 Move into the project directory:
@@ -314,30 +312,43 @@ The browser will open the ActiVision AI application and begin real-time activity
 |------------|-------------|
 | ![](Snapshots/Snap-1.png) | Login Page |
 | ![](Snapshots/Snap-2.png) | Home Dashboard |
-| ![](Snapshots/Snap-3.png) | Real-Time Activity Prediction |
+| ![](Snapshots/Snap-3.jpg) | Real-Time Activity Prediction |
+
+---
+
+# 🎥 Project Demo
+
+> 📹 Demo video will be added soon.
 
 ---
 
 # 💡 Skills Demonstrated
 
-### AI & Machine Learning
+### 🤖 AI & Machine Learning
 - Deep Learning
 - Computer Vision
 - Human Pose Estimation
 - Feature Engineering
 - Dataset Preparation
 
-### Frameworks & Libraries
+### 📚 Frameworks & Libraries
 - TensorFlow
 - Keras
 - OpenCV
 - MediaPipe
 - Flask
 
-### Software Development
+### 💻 Software Development
 - Backend & Frontend Integration
 - Real-Time Video Processing
 - AI Model Deployment
+
+### 🛠️ Tools & Deployment
+- Git & GitHub
+- Python Virtual Environments
+- Package Management (`pip`)
+- Model Serialization (`.h5`)
+- Flask Development Server
 
 ---
 
@@ -345,7 +356,7 @@ The browser will open the ActiVision AI application and begin real-time activity
 
 - Support additional activity classes
 - Improve accuracy with larger datasets
-- Implement Transformer-based architectures
+- Explore Vision Transformers (ViT) & Transformer-based architectures for improved activity recognition
 - Enhance low-light detection
 - Handle partial body occlusion
 - Deploy on cloud platforms
@@ -358,8 +369,8 @@ The browser will open the ActiVision AI application and begin real-time activity
 
 # 🏅 Recognition
 
-- **KSCST State-Level Poster Presentation:** ActiVision AI – Human Activity Recognition was presented at the **Karnataka State Council for Science and Technology (KSCST)** State-Level Poster Presentation event.
-- **Research Contribution:** A research paper based on this project was prepared and submitted, exploring the application of deep learning and computer vision for real-time human activity recognition.
+- **KSCST State-Level Poster Presentation:** The project was presented at the Karnataka State Council for Science and Technology (KSCST) State-Level Poster Presentation.
+- **Research Publication:** A research paper based on the proposed Human Activity Recognition system was prepared and submitted, highlighting the use of deep learning and computer vision for real-time activity recognition.
 
 ---
 
@@ -369,7 +380,7 @@ This project was developed collaboratively by:
 
 | Contributor | Responsibilities |
 |-------------|-----------------------|
-| **Sai Ravi Chandran** | Designed and developed the frontend, implemented the Flask backend, contributed to feature engineering, integrated the trained deep learning model, implemented real-time inference |
+| **Sai Ravi Chandran** | Designed and developed the frontend, implemented the Flask backend, integrated the trained deep learning model, implemented real-time inference, contributed to feature engineering, tested the end-to-end application, and deployed the complete Flask-based system. |
 | **Sirisha V Ramana** | Performed data collection, exploratory data analysis (EDA), data preprocessing, contributed to feature engineering, trained and evaluated multiple deep learning models, optimized model performance, and selected the final activity recognition model. |
 
 ---
@@ -378,6 +389,6 @@ This project was developed collaboratively by:
 
 > **ActiVision AI** was developed as a **final-year academic project** to demonstrate the practical implementation of **Deep Learning**, **Computer Vision**, **Human Pose Estimation**, and **Real-Time Human Activity Recognition** using a Flask-based web application.
 
-The project showcases the complete AI development lifecycle from collecting human movement data and training deep learning models to deploying a real-time activity recognition system powered by a laptop camera.
+The project showcases the complete AI development lifecycle from collecting human movement data and training deep learning models to deploying a real-time activity recognition system powered by real-time webcam input.
 
 ---
