@@ -1,10 +1,18 @@
-# 🏃 ActiVision AI - Real Time Human Activity Recognition Using Deep Learning
+# 🏃 ActiVision AI — Real-Time Human Activity Recognition Using Deep Learning
 
-A Flask-based **Human Activity Recognition (HAR)** system that uses **computer vision** and **deep learning** to identify human activities in real time through a laptop camera.
+ActiVision AI is a Flask-based Human Activity Recognition (HAR) system that combines MediaPipe pose estimation and deep learning to recognize human activities in real time using a laptop webcam. The project demonstrates an end-to-end AI pipeline from pose detection and feature extraction to model training, inference, and deployment through an interactive web application.
 
-ActiVision AI leverages **MediaPipe** for extracting human body landmarks from live video input and a trained deep learning model to classify different human activities. The system captures movement patterns, processes the extracted features, and displays the predicted activity through an interactive web-based interface.
+---
 
-This project demonstrates a complete AI workflow including **human pose detection, feature extraction, deep learning model training, model integration, and real-time activity prediction**.
+# ✨ Project Highlights
+
+- 🏃 Real-Time Human Activity Recognition
+- 📹 Webcam-Based Activity Detection
+- 🦴 MediaPipe Pose Estimation
+- 🧠 Deep Learning-Based Classification
+- ⚡ Live Prediction Pipeline
+- 🌐 Flask Web Application
+- 📊 Benchmark Evaluation on UCI HAR & UCF101
 
 ---
 
@@ -43,6 +51,20 @@ This project demonstrates a complete AI workflow including **human pose detectio
 
 ---
 
+# 🏃 Supported Activities
+
+ActiVision AI is capable of recognizing the following human activities in real time:
+
+- 🚶 Walking
+- 🏃 Running
+- 🪑 Sitting
+- 🧍 Standing
+- 🤸 Jumping
+- 👋 Waving
+- 🏋️ Squatting
+
+---
+
 # 🧠 Deep Learning Workflow
 
 ActiVision AI follows a complete machine learning pipeline for recognizing human activities.
@@ -58,6 +80,12 @@ ActiVision AI follows a complete machine learning pipeline for recognizing human
 
 ---
 
+# 🦴 Why MediaPipe?
+
+MediaPipe was selected for pose estimation because it provides fast and lightweight real-time human pose tracking with 33 body landmarks. Its efficiency enables accurate webcam-based activity recognition without requiring specialized hardware, making it well suited for real-time inference on standard laptops.
+
+---
+
 # 🧠 Model Architectures
 
 The project experiments with several deep learning architectures.
@@ -69,6 +97,17 @@ The project experiments with several deep learning architectures.
 | GRU | Efficient sequential learning with fewer parameters |
 | RNN | Basic sequential activity modeling |
 | CNN-LSTM | Combines spatial and temporal learning |
+
+---
+
+# 📚 Datasets
+
+The deep learning models were trained and evaluated using widely recognized human activity recognition benchmark datasets.
+
+| Dataset | Description |
+|----------|-------------|
+| **UCI HAR** | Smartphone sensor-based dataset containing accelerometer and gyroscope readings collected from 30 participants performing 6 daily activities. |
+| **UCF101** | Large-scale real-world video dataset containing 13,000+ videos across 101 human action categories, commonly used for action recognition research. |
 
 ---
 
@@ -220,17 +259,18 @@ HUMAN_ACTIVITY_FINAL/
 │   └── Python dependencies required to run the project.
 │
 ├── templates/
-│   ├── home.html      # Main application interface
-│   └── login.html     # User authentication page
+│   ├── home.html      # Activity recognition dashboard
+│   └── login.html     # User login interface
 │
 ├── static/
 │   ├── bg.jpg
 │   └── styles/
-│       └── Static assets including CSS, images,
-│           and frontend resources.
+│       └── Static assets including CSS, images, and frontend resources.
 │
 ├── Snapshots/
-│   └── Screenshots showcasing the application.
+│   ├── Snap-11.png
+│   ├── Snap-22.png
+│   └── Snap-33.jpg
 │
 └── README.md
     └── Project documentation.
@@ -318,7 +358,7 @@ The browser will open the ActiVision AI application and begin real-time activity
 
 # 🎥 Project Demo
 
-> 📹 Demo video will be added soon.
+> 🎬 A demonstration video showcasing real-time activity recognition will be added soon.
 
 ---
 
@@ -367,6 +407,16 @@ The browser will open the ActiVision AI application and begin real-time activity
 
 ---
 
+# ⚠️ Current Limitations
+
+- Supports single-person activity recognition only
+- Requires clear visibility of the human body
+- Performance may decrease under poor lighting conditions
+- Similar activities may occasionally be misclassified
+- Accuracy depends on webcam quality and camera positioning
+
+---
+
 # 🏅 Recognition
 
 - **KSCST State-Level Poster Presentation:** The project was presented at the Karnataka State Council for Science and Technology (KSCST) State-Level Poster Presentation.
@@ -380,15 +430,15 @@ This project was developed collaboratively by:
 
 | Contributor | Responsibilities |
 |-------------|-----------------------|
-| **Sai Ravi Chandran** | Designed and developed the frontend, implemented the Flask backend, integrated the trained deep learning model, implemented real-time inference, contributed to feature engineering, tested the end-to-end application, and deployed the complete Flask-based system. |
+| **Sai Ravi Chandran** | Designed and developed the frontend, built the Flask backend, integrated the trained deep learning model, implemented real-time inference, contributed to feature engineering, tested the complete application, and deployed the end-to-end system. |
 | **Sirisha V Ramana** | Performed data collection, exploratory data analysis (EDA), data preprocessing, contributed to feature engineering, trained and evaluated multiple deep learning models, optimized model performance, and selected the final activity recognition model. |
 
 ---
 
 # 📝 Project Note
 
-> **ActiVision AI** was developed as a **final-year academic project** to demonstrate the practical implementation of **Deep Learning**, **Computer Vision**, **Human Pose Estimation**, and **Real-Time Human Activity Recognition** using a Flask-based web application.
+> **ActiVision AI** was developed collaboratively as a **final-year engineering project** to demonstrate the practical application of **Deep Learning**, **Computer Vision**, **Human Pose Estimation**, and **Real-Time Human Activity Recognition**.
 
-The project showcases the complete AI development lifecycle from collecting human movement data and training deep learning models to deploying a real-time activity recognition system powered by real-time webcam input.
+The project showcases an end-to-end AI pipeline, from pose estimation and model training to real-time activity recognition through a Flask-based web application.
 
 ---
