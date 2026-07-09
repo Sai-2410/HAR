@@ -85,7 +85,7 @@ MediaPipe was selected for pose estimation because it provides fast and lightwei
 
 ---
 
-# 🧠 Model Architectures
+# 🕸️ Model Architectures
 
 The project experiments with several deep learning architectures.
 
