@@ -16,7 +16,7 @@ ActiVision AI is a Flask-based Human Activity Recognition (HAR) system that leve
 
 ---
 
-# 🚀 Tech Stack
+# 🛠️ Tech Stack
 
 <p align="left">
 
@@ -37,7 +37,7 @@ ActiVision AI is a Flask-based Human Activity Recognition (HAR) system that leve
 
 ---
 
-# 📌 Core Features
+# ⭐ Core Features
 
 - Real-time human activity recognition using a laptop webcam
 - Human pose estimation using MediaPipe
@@ -85,7 +85,7 @@ MediaPipe was selected for pose estimation because it provides fast and lightwei
 
 ---
 
-# 🕸️ Model Architectures
+# 🏗️ Model Architectures
 
 The project experiments with several deep learning architectures.
 
@@ -110,7 +110,7 @@ The deep learning models were trained and evaluated using widely recognized huma
 
 ---
 
-# 🧪 Model Performance
+# 📊 Model Performance
 
 Multiple deep learning architectures were evaluated on the **UCI HAR** and **UCF101** benchmark datasets to compare their performance for human activity recognition.
 
@@ -162,7 +162,7 @@ Multiple deep learning architectures were evaluated on the **UCI HAR** and **UCF
 
 # ⚙️ Development Workflow
 
-## 📌 Data Collection
+## Data Collection
 
 - Captures live webcam frames
 - Detects human pose using MediaPipe
@@ -170,14 +170,14 @@ Multiple deep learning architectures were evaluated on the **UCI HAR** and **UCF
 - Converts movements into structured numerical data
 - Stores activity samples for model training
 
-## 📌 Data Processing & Feature Extraction
+## Data Processing & Feature Extraction
 
 - Cleans collected landmark data
 - Prepares activity datasets
 - Converts landmarks into model-ready feature vectors
 - Organizes samples by activity class
 
-## 📌 Model Training
+## Model Training
 
 - Loads processed datasets
 - Builds deep learning models
@@ -186,7 +186,7 @@ Multiple deep learning architectures were evaluated on the **UCI HAR** and **UCF
 - Saves trained model as `model.h5`
 - Stores activity labels as `labels.npy`
 
-## 📌 Inference
+## Inference
 
 - Loads the trained model
 - Captures live webcam frames
@@ -194,7 +194,7 @@ Multiple deep learning architectures were evaluated on the **UCI HAR** and **UCF
 - Performs activity classification
 - Displays prediction in real time
 
-## 📌 Flask Web Application
+## Flask Web Application
 
 The Flask backend connects the trained deep learning model with the frontend.
 
@@ -337,7 +337,7 @@ The browser will open the ActiVision AI application and begin real-time activity
 
 ---
 
-# 🚀 Future Improvements
+# 🔮 Future Improvements
 
 - Support additional activity classes
 - Improve accuracy with larger datasets
