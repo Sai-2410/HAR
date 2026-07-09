@@ -57,7 +57,6 @@ ActiVision AI is capable of recognizing the following human activities in real t
 
 - 🚶 Walking
 - 🏃 Running
-- 🪑 Sitting
 - 🧍 Standing
 - 🤸 Jumping
 - 👋 Waving
